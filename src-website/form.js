@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var name = document.getElementById("name");
   var email = document.getElementById("email");
-  var location = document.getElementById("location");
+  var location = document.getElementById("address");
   var product = document.getElementById("product");
   var quantity = document.getElementById("quantity");
   var regex = ",";
