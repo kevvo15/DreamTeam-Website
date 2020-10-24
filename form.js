@@ -21,6 +21,5 @@ $(document).ready(function() {
     var template_params = { message: order };
     emailjs.send(service_id,template_id,template_params);
 	
-	
   });
 });
