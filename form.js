@@ -19,14 +19,10 @@ $(document).ready(function() {
     order += product.value + regex;
     order += quantity.value;
     
-    //var service_id = 'customer+orders';
-    //var template_id = 'template_mxp9zmg';
-    //var template_params = { message: order };
-    //emailjs.send(service_id,template_id,template_params);
-	
+	var data = new FormData(order);
 	var xhr = new XMLHttpRequest();
 	xhr.open(method, url);
-	xhr.send(order);
+	xhr.send(data);
 	
 	window.open("confirm.html","_self");
   });
