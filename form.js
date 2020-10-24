@@ -19,7 +19,7 @@ $(document).ready(function() {
     var service_id = 'customer+orders';
     var template_id = 'template_mxp9zmg';
     var template_params = { message: order };
-    
+    console.log(order);
     emailjs.send(service_id,template_id,template_params);
   });
 });
